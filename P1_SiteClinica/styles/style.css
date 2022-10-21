@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* HEADER*/
+.logo{
+    padding-top: 0;
+    height: 10vh;
+    justify-content: center;
+    
+}
+
+.logo img{
+    height: 9vh;
+    width: 30vh;
+    padding-left: 20PX;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    box-shadow: 0 0 1rem black;
+    align-items: center;
+}
+
+.lista-navegacao{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    list-style: none;
+    margin: 23px;
+}
+.lista-navegacao li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+
+.cabecalho{
+    text-align: center;
+    background-color: rgb(2, 82, 2);
+    padding: 10px;
+}
+
+/*MAIN*/
+
+section{
+    display: flex;
+    padding-top: 10px;
+    
+}
+
+.main-exames{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.texto h2{
+    margin-top: 50px;
+    width: 500px;
+}
+
+.texto h2{
+    color: rgb(8, 8, 8);
+    text-align: center;
+}
+
+.lista-exames{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.lista-exames li{
+    text-align: left;
+    list-style: none;
+}
+
+.primeira-info div img{
+    width: 800px;
+}
+
+.primeira-info div p{
+    width: 600px;
+    font-size: 45px;
+}
+
+
+.segunda-info div img{
+    width: 800px;
+}
+
+.segunda-info div p{
+    width: 600px;
+    font-size: 45px;
+}
+
+/*FOOTER*/
+
+footer{
+
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    /*box-shadow: 0 0 1rem black;*/
+    align-items: center;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-exames{
+    margin-top: 54px;
+}
+
+#info-atendimento a{
+    text-decoration: none;
+    color: white;
+}
+
+#info-atendimento h3{
+    padding-left: 20px;
+}
+
+
+.lista-nav-footer{
+    display: flex;
+    list-style: none;
+    padding-right: 10rem;
+    justify-content: space-around;
+    padding: 20px;
+    
+    
+}
+
+.lista-nav-footer li{
+    padding: 5px;
+}
+
+.img-icon{
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+}

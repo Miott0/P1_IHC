@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleLogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <a href="./Home.html"><img src="images/Logo-Branca.png" alt=""></a>
+        </div>
+      <nav class="menu-navegacao">
+        <ul class="lista-navegacao">
+            <li>
+              <a href="./Home.html">Home</a>
+            </li>
+            <li>
+              <a href="./Especialidades.html">Especialidades</a>
+            </li>
+            <li>
+              <a href="./Exames.html">Exames</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+
+
+   
+      <div class="container" id="container">
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Paciente</h1>
+            <span>Use sua Conta</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Senha" />
+            <a href="#">Esqueceu sua Senha?</a>
+            <a  class= "link-button" href="./PaginaCliente.html">SING IN</a>
+            <!-- <a href="./PaginaCliente.html"><button>Sign In</button></a> -->
+          </form>
+        </div>
+
+
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Médico</h1>
+            <span>Use sua Conta</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Senha"/>
+            <a href="#">Esqueceu sua Senha?</a>
+            <a  class= "link-button" href="./PaginaCliente.html">SING IN</a>
+           <!--  <a href="./PaginaCliente.html"><button>Sign In</button></a> -->
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Paciente</h1>
+              <br>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Médico</h1>
+              <br>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
