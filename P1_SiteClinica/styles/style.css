@@ -10,6 +10,7 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: #e6e6e6;
 }
 
 
@@ -97,8 +98,11 @@ section{
 
 .primeira-info{
     margin-left: 0vh;
+    background-image: url("../images/Img-Primeira-Info.jpg");
+
     
 }
+
 .primeira-info div img{
     width: 750px;
     padding-left: 65px;
@@ -113,7 +117,9 @@ section{
 
 
 .segunda-info{
-    padding-top: 0px;
+    padding-top: 2vh;
+   
+    
 }
 
 .segunda-info div img{
@@ -144,21 +150,15 @@ section{
     flex-direction: column;
     font-size: 25px;
     align-items: center;
-    /* border: 5px solid #F2eee3;
-    border-color: red; */
 }
 
 .container1 #paragrafo1{
     width:100vh;
-    /* border: 5px solid #F2eee3;
-    border-color: blue; */
 }
 
 .container1 #paragrafo2{ 
     margin-top: 10px;
     width: 150vh;   
-    /* border: 5px solid #F2eee3;
-    border-color: violet; */
 }
 
 .container2{
@@ -167,8 +167,6 @@ section{
     margin-top: 20px;
     font-size: 25px;
     display: flex;
-    /* border: 5px solid #F2eee3;
-    border-color: green; */
 }
 
 .container2 ul{
