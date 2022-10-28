@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylePerfis.css">
+    <title>Pagina Cliente</title>
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <a href="./Index.html"><img src="images/Logo-Branca.png" alt=""></a>
+        </div>
+        <div class="info-cliente">
+            <img src="images/sombra-de-usuario-masculino (1).png" alt="">
+            <p>Maria Alencar</p>
+        </div>
+    </header>
+    <div class="cabecalho"> 
+        <h2>Agendar Exame</h2>
+    </div>
+    <main class="main-agendamento-exame">
+        
+
+        <div class="exames">
+            <p>Exame</p>
+            <div id="selecao-exames">
+                <select name="Selecione o exame" id="Exame">
+                    <option value="1">Ultrassonografia</option>
+                    <option value="2">Mamografia</option>
+                    <option value="3">Raio-X</option>
+                    <option value="4">Desintometria Óssea</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="horario">
+            <div class="data">
+                <label for="Consulta"><span></span>Data do Exame</label>
+                <input type="date" name="DataConsulta" id="DataConsulta">
+            </div>
+
+            <div class="hora">
+                <label for="Consulta"><span></span>Horário do Exame</label>
+                <input type="time" name="HoraConsulta" id="HoraConsulta">
+            </div>
+
+        </section>
+
+        <section class="container3">
+            <div>
+                <a href="./PaginaCliente.html"><p>Confirmar Agendamento</p></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-exames">
+        <div id ="info-atendimento">
+            <a href="#"><h3>Atendimento ao Cliente</h3></a> 
+        </div>
+        <div>
+            <h3>Telefone: (22) 999999999</h3>
+        </div>
+        <nav class="nav-footer">
+            <ul class="lista-nav-footer">
+                <li>
+                    <a href=""><img src="images/linkedin.png"  class="img-icon" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/instagram.png" class="img-icon" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/github.png" class="img-icon" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Miott0"><img src="images/github.png" class="img-icon" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

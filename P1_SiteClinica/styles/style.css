@@ -24,7 +24,7 @@ body{
 .logo img{
     height: 9vh;
     width: 30vh;
-    padding-left: 20PX;
+    padding-left: 5vh;
 }
 
 header{
@@ -39,7 +39,7 @@ header{
 .lista-navegacao{
     display: flex;
     justify-content: space-between;
-    padding-left: 15px;
+    padding-left: 5vh;
     list-style: none;
     margin: 23px;
 }
@@ -54,14 +54,15 @@ header{
 .cabecalho{
     text-align: center;
     background-color: rgb(2, 82, 2);
-    padding: 10px;
+    padding: 2vh;
+    color: white;
 }
 
 /*MAIN*/
 
 section{
     display: flex;
-    padding-top: 10px;
+    padding-top: 2vh;
     
 }
 
@@ -74,8 +75,8 @@ section{
 
 
 .texto h2{
-    margin-top: 50px;
-    width: 500px;
+    margin-top: 5vh;
+    width: 100vh;
 }
 
 .texto h2{
@@ -84,7 +85,7 @@ section{
 }
 
 .lista-exames{
-    margin-top: 50px;
+    margin-top: 15vh;
     text-align: center;
 
 }
@@ -94,27 +95,102 @@ section{
     list-style: none;
 }
 
+.primeira-info{
+    margin-left: 0vh;
+    
+}
 .primeira-info div img{
-    width: 800px;
+    width: 750px;
+    padding-left: 65px;
+    
 }
 
 .primeira-info div p{
-    width: 600px;
+    width: 80vh;
     font-size: 45px;
+    padding-left: 5vh;
 }
 
 
+.segunda-info{
+    padding-top: 0px;
+}
+
 .segunda-info div img{
-    width: 800px;
+    width: 750px;
+    height: 450px;
+    padding-left: 1vh;
 }
 
 .segunda-info div p{
-    width: 600px;
+    width: 80vh;
+    height: 60vh;
     font-size: 45px;
+    margin-left: 4vh;
 }
 
-/*FOOTER*/
+/* Especialidade */
 
+.main-especialidade{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container1{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    /* border: 5px solid #F2eee3;
+    border-color: red; */
+}
+
+.container1 #paragrafo1{
+    width:100vh;
+    /* border: 5px solid #F2eee3;
+    border-color: blue; */
+}
+
+.container1 #paragrafo2{ 
+    margin-top: 10px;
+    width: 150vh;   
+    /* border: 5px solid #F2eee3;
+    border-color: violet; */
+}
+
+.container2{
+    width: 900px;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    /* border: 5px solid #F2eee3;
+    border-color: green; */
+}
+
+.container2 ul{
+    list-style: none;
+}
+
+.container2 li{
+    margin-top: 1vh;
+}
+
+
+
+.container3{
+    margin-top: 5vh;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+
+/*FOOTER*/
 footer{
 
     height: 10vh;
@@ -127,6 +203,7 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
+
 }
 
 .footer-exames{
@@ -149,8 +226,6 @@ footer{
     padding-right: 10rem;
     justify-content: space-around;
     padding: 20px;
-    
-    
 }
 
 .lista-nav-footer li{

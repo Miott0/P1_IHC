@@ -4,10 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleCadastro.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>SingUp</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <a href="./Home.html">Voltar para Home</a>
+    <header>
+        <div class = "logo">
+            <a href="./Index.html"><img src="images/Logo-Branca.png" alt=""></a>
+        </div>
+        <nav class="menu-navegacao">
+            <ul class="lista-navegacao">
+                <li>
+                    <a href="./Index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./Especialidades.html">Especialidades</a>
+                </li>
+                <li>
+                    <a href="./Exames.html">Exames</a>
+                </li>
+                <li>
+                    <a href="./Login.htm">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container1">
+        <div id="info-cadastro">
+            <h2>Crie seu cadastro</h2>
+            <h3><span>*</span>campos obrigatórios</h3>
+        </div>
+    </section>
+
+    <main>
+        <section class="container2">
+            <form action="">
+                <div id="nome">
+                    <label for="nome"><span>*</span>Nome completo</label>
+                    <input type="text">
+                </div>
+
+                <div id="genero">
+                    <p><span>*</span>Gênero</p>
+                    <div id="sexo">
+                        <input type="radio" name="genero" value="Masculino"/>
+                        <label for="sexo">masculino</label>
+
+                        <input type="radio" name="genero" value="Feminino"/>
+                        <label for="sexo">feminino</label>
+                        
+                   </div>
+                </div>
+                
+                <div id="data">
+                    <label for="data"><span>*</span>Data de Nascimento</label>
+                    <input type="date" name="DataNascimento" id="DataNascimento">
+                </div>
+
+                <div id="cpf">
+                    <label for="cpf"><span>*</span>Cpf</label>
+                    <input type="text">
+                </div>
+                <div class="endereco">
+                    <div id="rua">
+                        <label for="endereco"><span>*</span>Endereço</label>
+                        <input type="text">
+                    </div>
+    
+                    <div id="numero">
+                        <label for="numero"><span>*</span>Número</label>
+                        <input type="text">
+                    </div>
+                </div>
+                
+
+                <div id="cidade">
+                    <label for="cidade"><span>*</span>Cidade</label>
+                    <input type="text">
+                </div>
+
+                <div id="estado">
+                    <label for="estado"><span>*</span>Estado</label>
+                    <input type="text">
+                </div>
+
+                <div id="email">
+                    <label for="email"><span>*</span>Email</label>
+                    <input type="text">
+                </div>
+
+                <div id="senha">
+                    <label for="senha"><span>*</span>Senha</label>
+                    <input type="password">
+                </div>
+            </form>
+
+            
+    
+        </section>
+
+        <section class="container3">
+            <div>
+                <a href="./PaginaCliente.html"><p>Criar Cadastro</p></a>
+            </div>
+        </section>
+
+        
+
+    </main>
 </body>
 </html>
