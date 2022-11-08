@@ -217,6 +217,7 @@ header{
 }
 
 
+
 .main-agendamento-exame .horario{
     font-size: 20px;
     align-items: flex-start;
@@ -237,7 +238,7 @@ header{
 }
 
 
-main .container3{
+.container3 button{
     background-color: #03B332;
     width: 300px;
     height: 50px;
@@ -246,8 +247,6 @@ main .container3{
     margin-bottom: 50px;
     border: black;
     border: solid 1px;
-
-
 }
 
 .container3 div{
@@ -260,7 +259,9 @@ main .container3{
     color: white;
 }
 
-
+span{
+    color: red;
+}
 /* footer */
 footer{
 
@@ -308,3 +309,4 @@ footer{
     height: 25px;
     padding-left: 10px;
 }
+

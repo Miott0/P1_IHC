@@ -20,16 +20,19 @@
     <div class="cabecalho"> 
         <h2>Agendar Consulta</h2>
     </div>
-    <main class="main-agendamento-exame">
+
+    <form class="main-agendamento-exame" id="main-agendamento-exame">
         <div class="exames">
             <p>Especialidade</p>
             <div id="selecao-exames">
                 <select name="Selecione o exame" id="Exame">
+                    <option value="0"> </option>
                     <option value="1">Alergologia</option>
                     <option value="2">Angiologia</option>
                     <option value="3">Cardiologia</option>
                     <option value="4">Cardiopediatria</option>
                 </select>
+                <span id="aviso-erro-exame"></span>
             </div>
         </div>
 
@@ -37,21 +40,29 @@
             <div class="data">
                 <label for="Consulta"><span></span>Data da Consulta</label>
                 <input type="date" name="DataConsulta" id="DataConsulta">
+                <span id="aviso-erro-data"></span>
             </div>
 
             <div class="hora">
                 <label for="Consulta"><span></span>Horário da Consulta</label>
                 <input type="time" name="HoraConsulta" id="HoraConsulta">
+                <span id="aviso-erro-hora"></span>
             </div>
 
         </section>
+
+        <p id="confirmacao-consulta"></p>
 
         <section class="container3">
-            <div>
+            <button type="submit"  id="enviar">
                 <a href="./PaginaCliente.html"><p>Confirmar Agendamento</p></a>
-            </div>
+            </button>
         </section>
-    </main>
+
+        
+    </form>
+    <script src="./validacaoConsulta.js"></script>
+
 
     <footer class="footer-exames">
         <div id ="info-atendimento">
