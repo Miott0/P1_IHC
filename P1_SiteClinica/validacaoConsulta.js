@@ -12,7 +12,7 @@ horaAgendada.addEventListener("input", () => {
    hora = horaAgendada.value;
 }, false);
 
-var dataMarcada;
+var dataMarcada = null;
 var span = document.getElementById('aviso-erro-data');
 diaAgendado.addEventListener("input", () =>{
     dataMarcada = new Date(diaAgendado.value);
@@ -32,7 +32,7 @@ form.onsubmit = evento =>{
     
     if(hora < '08:00' || hora > '23:00'){
         console.log("erro")
-        document.getElementById("aviso-erro-hora").innerHTML = "<p> Precisa preencher campo!!!</p>"
+        document.getElementById("aviso-erro-hora").innerHTML = "<p>Precisa preencher campo!!!</p>"
         evento.preventDefault();
         return
     }
@@ -40,7 +40,7 @@ form.onsubmit = evento =>{
 
     if(texto === " " || texto === null ){
         console.log("erro")
-        document.getElementById("aviso-erro-exame").innerHTML = "<p> Precisa preencher campo!!!</p>"
+        document.getElementById("aviso-erro-exame").innerHTML = "<p>Precisa preencher campo!!!</p>"
         evento.preventDefault();
         return
     }
@@ -48,12 +48,11 @@ form.onsubmit = evento =>{
 
     if(dataMarcada < dataAtual){
         console.log("erro")
-        document.getElementById("aviso-erro-data").innerHTML = "<p> Precisa preencher campo!!!</p>"
+        document.getElementById("aviso-erro-data").innerHTML = "<p>Coloque uma data válida!!!</p>"
         evento.preventDefault();
         return
     }
-
-
     window.alert("Consulta Agendada Com Sucesso");
 }
+
 
