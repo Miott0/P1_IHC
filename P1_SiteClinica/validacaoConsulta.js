@@ -56,13 +56,13 @@ form.onsubmit = evento =>{
 
     if(dataMarcada < dataAtual){
         diaAgendado.className = 'class-erro';
-        document.getElementById("aviso-erro-exame").innerHTML = "<p>Coloque uma data válida!!!</p>"
+        document.getElementById("aviso-erro-data").innerHTML = "<p>Coloque uma data válida!!!</p>"
         evento.preventDefault();
         return
     }
     else{
         diaAgendado.className = 'class-correto';
-        document.getElementById("aviso-erro-exame").innerHTML = "<p></p>"
+        document.getElementById("aviso-erro-data").innerHTML = "<p></p>"
     }
     
 
