@@ -31,27 +31,42 @@ select.addEventListener('change', function() {
 form.onsubmit = evento =>{
     
     if(hora < '08:00' || hora > '23:00'){
-        console.log("erro")
+         horaAgendada.className = 'class-erro';
         document.getElementById("aviso-erro-hora").innerHTML = "<p>Precisa preencher campo!!!</p>"
         evento.preventDefault();
         return
     }
+    else{
+        horaAgendada.className = 'class-correto';
+        document.getElementById("aviso-erro-hora").innerHTML = "<p></p>"
+    }
     
 
     if(texto === " " || texto === null ){
-        console.log("erro")
+        select.className = 'class-erro';
         document.getElementById("aviso-erro-exame").innerHTML = "<p>Precisa preencher campo!!!</p>"
         evento.preventDefault();
         return
     }
+    else{
+        select.className = 'class-correto';
+        document.getElementById("aviso-erro-hora").innerHTML = "<p></p>"
+    }
 
 
     if(dataMarcada < dataAtual){
-        console.log("erro")
+        diaAgendado.className = 'class-erro';
         document.getElementById("aviso-erro-data").innerHTML = "<p>Coloque uma data válida!!!</p>"
         evento.preventDefault();
         return
     }
+    else{
+        diaAgendado.className = 'class-correto';
+        document.getElementById("aviso-erro-hora").innerHTML = "<p></p>"
+    }
+    
+
+
     window.alert("Consulta Agendada Com Sucesso");
 }
 
