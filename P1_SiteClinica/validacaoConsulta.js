@@ -31,7 +31,7 @@ select.addEventListener('change', function() {
 form.onsubmit = evento =>{
     
     if(hora < '08:00' || hora > '23:00'){
-         horaAgendada.className = 'class-erro';
+        horaAgendada.className = 'class-erro';
         document.getElementById("aviso-erro-hora").innerHTML = "<p>Precisa preencher campo!!!</p>"
         evento.preventDefault();
         return
@@ -50,19 +50,19 @@ form.onsubmit = evento =>{
     }
     else{
         select.className = 'class-correto';
-        document.getElementById("aviso-erro-hora").innerHTML = "<p></p>"
+        document.getElementById("aviso-erro-exame").innerHTML = "<p></p>"
     }
 
 
     if(dataMarcada < dataAtual){
         diaAgendado.className = 'class-erro';
-        document.getElementById("aviso-erro-data").innerHTML = "<p>Coloque uma data válida!!!</p>"
+        document.getElementById("aviso-erro-exame").innerHTML = "<p>Coloque uma data válida!!!</p>"
         evento.preventDefault();
         return
     }
     else{
         diaAgendado.className = 'class-correto';
-        document.getElementById("aviso-erro-hora").innerHTML = "<p></p>"
+        document.getElementById("aviso-erro-exame").innerHTML = "<p></p>"
     }
     
 
