@@ -259,7 +259,16 @@ header{
     color: white;
 }
 
+.class-erro{ 
+    border: solid 3px red;
+}
+
+.class-correto{
+    border: solid 3px rgb(16, 206, 16);
+}
+
 span{
+    font-size: 14px;
     color: red;
 }
 /* footer */
@@ -309,4 +318,6 @@ footer{
     height: 25px;
     padding-left: 10px;
 }
+
+
 
